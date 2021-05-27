@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="@string/bem_vindo_a"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/botaoUltimasNoticias"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="108dp"
+        android:onClick="telaNoticias"
+        android:text="@string/ltimas_not_cias" />
+
+    <Button
+        android:id="@+id/botaoEmpreendimentos"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-63dp"
+        android:layout_marginLeft="-63dp"
+        android:layout_marginTop="108dp"
+        android:layout_toEndOf="@+id/txtBemVindo"
+        android:layout_toRightOf="@+id/txtBemVindo"
+        android:onClick="telaEmpreendimentos"
+        android:text="@string/empreendimentos" />
+
+    <Button
+        android:id="@+id/botaoSobre"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="178dp"
+        android:onClick="telaSobre"
+        android:text="@string/sobre_a_thami" />
+
+    <Button
+        android:id="@+id/botaoContato"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/botaoEmpreendimentos"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="178dp"
+        android:onClick="telaFaleConosco"
+        android:text="@string/contate_nos" />
+
+</RelativeLayout>
